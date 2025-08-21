@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #1D1D27; /* Dark Background */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#cursor-gradient {
+  background: radial-gradient(600px at var(--x) var(--y), rgba(247, 37, 133, 0.15), transparent 80%);
+}
+
+/* ADD THESE NEW BUTTON STYLES */
+@layer components {
+  .btn {
+    @apply px-4 py-2 font-bold rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-surface transition-all duration-300 transform hover:scale-105;
+  }
+  .btn-primary {
+    @apply btn bg-primary text-white hover:bg-primary-dark focus:ring-primary;
+  }
+  .btn-secondary {
+    @apply btn bg-surface text-text-primary border border-border hover:border-primary focus:ring-primary;
+  }
+  .btn-success {
+    @apply btn bg-green-600 text-white hover:bg-green-700 focus:ring-green-500;
+  }
+}
