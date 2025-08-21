@@ -8,9 +8,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-#cursor-gradient {
-  background: radial-gradient(600px at var(--x) var(--y), rgba(247, 37, 133, 0.15), transparent 80%);
-}
 
 /* ADD THESE NEW BUTTON STYLES */
 @layer components {
